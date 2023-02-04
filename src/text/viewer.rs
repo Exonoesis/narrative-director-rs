@@ -95,12 +95,14 @@ impl ParagraphViewer {
             .expect("Could not read text file.");
 
         let split_paragraphs: Vec<&str> = whole_text_content
-            .split_inclusive(|character| character == '.' || character == '?' || character == '!')
+            .split(|character| character == '§')
             .collect();
 
         self.paragraphs = split_paragraphs
-            .chunks(4)
-            .map(|sentences| sentences.concat())
+            .iter()
+            .map(|sentence| sentence.to_string())
+            //.chunks(4)
+            //.map(|sentences| sentences.concat())
             .collect();
 
         self.progress_counter.set_current(0);
