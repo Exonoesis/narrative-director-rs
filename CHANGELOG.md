@@ -5,16 +5,25 @@
 - This project uses [ISO Standard](https://www.iso.org/iso-8601-date-and-time-format.html) date formatting
 
 ## Unreleased
+### Changed
+- Fixed Changelog ordering of tags.
+
+### Fixed
+- Recording halting from unsupported Sample Format.
+
+## [0.1.2] - 2023-05-20
 ### Added
 - Close button to About dialog.
 
 ### Changed
 - Updated CPAL dependency to 0.15
+- Updated various dependencies to latest version via cargo update.
 
 ### Fixed
 - Text not wrapping.
 - Project directory not being saved properly when changed in Preferences.
 - macOS builds only being compatible with latest macOS version.
+- macOS not saving audio file after recording.
 - Existing audio not being loaded after using go-to prompt.
 
 ## [0.1.1] - 2023-01-30
@@ -66,5 +75,6 @@
 - Unit Testing in GitHub Workflow files, temporarily.
 
 [Unreleased]: https://github.com/divark/narrative-director-rs/blob/main/CHANGELOG.md
-[0.1.0]: https://github.com/divark/narrative-director-rs/releases/tag/v0.1.0
+[0.1.2]: https://github.com/divark/narrative-director-rs/releases/tag/v0.1.2
 [0.1.1]: https://github.com/divark/narrative-director-rs/releases/tag/v0.1.1
+[0.1.0]: https://github.com/divark/narrative-director-rs/releases/tag/v0.1.0
